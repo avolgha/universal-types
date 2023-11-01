@@ -1,0 +1,44 @@
+# <object type: object> <object name> {
+#   <field type>[?] <field name>;
+# };
+# 
+# <object type: union> <object name> = <field type> [| <field type>]...;
+# 
+# ========
+# 
+# <object type>: object | union
+# <object name>: string
+# 
+# <field type>: <object type>
+# <field name>: ref <object name>
+
+Tokens:
+  # Whitespaces
+  - type: NewLine
+    regex: '\r?\n'
+  - type: Space
+    regex: '[ \t]+'
+
+  # Object Type
+  - type: ObjectType
+    regex: '(object|union)'
+
+  # Field Type
+  - type: FieldType
+    regex: '(Int|Float|Bool|String|Char)\??'
+
+  # Object Name and Field Name
+  - type: Name
+    regex: '[a-zA-Z][a-zA-Z0-9]*\??'
+
+  # Symbols
+  - type: BracketOpen
+    value: '{'
+  - type: BracketClose
+    value: '}'
+  - type: Equals
+    value: '='
+  - type: Seperator
+    value: '|'
+  - type: Semicolon
+    value: ';'

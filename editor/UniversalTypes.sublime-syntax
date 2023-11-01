@@ -1,0 +1,9 @@
+%YAML 1.2
+---
+file_extensions:
+  - ut
+scope: source.ts
+contexts:
+  main:
+    - match: '\b(object|union)\b'
+      scope: entity.name.type.interface.ts

@@ -1,0 +1,12 @@
+{
+  "name": "@avolgha/universal-types",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {},
+  "author": "avolgha",
+  "license": "BSD-3 Clause Clear",
+  "dependencies": {
+    "universal-lexer": "^2.0.6"
+  }
+}

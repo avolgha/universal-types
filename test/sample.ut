@@ -1,0 +1,8 @@
+object TestObject {
+  Int testInt;
+  Float testFloat;
+  String? testString;
+  Char testChar;
+};
+
+union TestUnion = TestObject | String;
