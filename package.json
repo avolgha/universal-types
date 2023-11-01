@@ -1,11 +1,19 @@
 {
   "name": "@avolgha/universal-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "type": "module",
   "scripts": {},
-  "author": "avolgha",
+  "author": "avolgha (github.com/avolgha) <avolgha@gmail.com>",
   "license": "BSD-3 Clause Clear",
+  "homepage": "https://github.com/avolgha/universal-types",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avolgha/universal-types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avolgha/logs"
+  },
   "dependencies": {
     "universal-lexer": "^2.0.6"
   }
